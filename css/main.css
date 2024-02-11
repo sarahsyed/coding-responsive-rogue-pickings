@@ -1,4 +1,8 @@
 /******** GLOBAL STYLES ********/
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: .9em;
@@ -8,8 +12,6 @@ body {
 /* The width property has been changed to max-width */
 .content-wrapper {
 	max-width: 1200px;
-	/* margin: 0 auto; */
-	/* overflow: auto; */
 	width: 90%;
 	display: flex;
 	justify-content: center;
@@ -45,15 +47,10 @@ p {
 	line-height: 36px;
 }
 
-html {
-	font-size: 16px;
-}
 
 /******** HEADER STYLES ********/
 /* The widths are in a percentage! */
 header {
-	/* height: 110px; */
-	/* margin: 0 auto; */
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -61,11 +58,10 @@ header {
 }
 
 header h1 {
-	/* float: left; */
 	margin: 0;
 	padding: 38px 0;
 	align-content: center;
-	justify-content:center;
+	/* justify-content:center; */
 	width: 100%;
 	border-bottom: 3px solid #77A466;
 }
@@ -76,11 +72,10 @@ header h1 span {
 }
 
 header nav {
-	/* float: right; */
 	padding: 20px 0;
 	align-content: center;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	
 }
 
@@ -92,7 +87,6 @@ header nav ul {
 }
 
 header nav ul li {
-	/* display: inline-block; */
 	font-size: 0.86em; /*<--14px-->*/
 	font-weight: 700;
 	text-transform: uppercase;
@@ -138,26 +132,24 @@ header nav ul li a {
 .section-two,
 .section-three {
 	flex-flow:row wrap;
-	/* box-sizing: border-box; */
-	/* float: left; */
 	/* padding: 0 40px; */
 	align-content: center;
-	justify-content: center;
+	/* justify-content: center; */
 	width: 100%;
 }
 
 .section-one {
-	/* width: 29%; */
+	width: 100;
 }
 
 .section-two {
-	/* width: 42%; */
+    width: 100%;
 	border-top: 5px solid #EEE;
 	border-bottom: 5px solid #EEE;
 }
 
 .section-three {
-	/* width: 29%; */
+	width: 100%;
 	
 }
 
@@ -190,4 +182,31 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.875rem;
+}
+
+/*Tablet*/
+@media all and (min-width: 768px){
+	
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+	
+	.section-one {
+		width: 26%;
+	}
+	
+	.section-two {
+		padding: 0 30px;
+		width: 40%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+	}
+	
+	.section-three {
+		width: 26%;
+		
+	}
+	
 }
